@@ -1,4 +1,4 @@
-# qTox updater tools
+# qTox updater tools [![Build Status](https://travis-ci.org/qTox/qtox-updater-tools.svg?branch=master)](https://travis-ci.org/qTox/qtox-updater-tools)
 
 Tools for releasing qTox updates.
 
