@@ -1,0 +1,16 @@
+# Rust
+target/
+.cargo/
+
+# vim
+*.swp
+
+# git
+*.orig
+
+# other
+*.patch
+
+# public/secret keys for signing updates
+qtox-updater-skey
+qtox-updater-pkey

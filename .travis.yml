@@ -1,0 +1,27 @@
+dist: trusty
+language: rust
+rust:
+  - stable
+  - beta
+  - nightly
+
+# regex is for release tags
+branches:
+  only:
+    - master
+    - /^v(\d+\.){2}\d+$/
+
+addons:
+  apt:
+    sources:
+      - sourceline: 'ppa:chris-lea/libsodium'
+    packages:
+      - libsodium-dev
+
+matrix:
+  fast_finish: true
+  allow_failures:
+    - rust: beta
+    - rust: nightly
+
+script: "./.travis/build.sh"
