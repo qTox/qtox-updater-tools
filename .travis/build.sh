@@ -26,6 +26,7 @@ set -eu -o pipefail
 
 build_rust_bits() {
     local rusty_bits=(
+        qtox-updater-genkeys
         qtox-updater-sign
     )
 
