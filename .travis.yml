@@ -4,6 +4,11 @@ rust:
   - stable
   - beta
   - nightly
+cache:
+ directories:
+   - $HOME/.cargo
+   - $TRAVIS_BUILD_DIR/qtox-updater-genkeys/target
+   - $TRAVIS_BUILD_DIR/qtox-updater-sign/target
 
 # regex is for release tags
 branches:
